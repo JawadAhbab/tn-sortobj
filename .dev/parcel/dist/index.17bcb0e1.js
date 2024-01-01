@@ -600,6 +600,7 @@ const obj = {
 };
 console.log(JSON.stringify(obj, null, 2));
 console.log(JSON.stringify((0, _index.sortobj)(obj), null, 2));
+console.log(JSON.stringify(obj, null, 2));
 
 },{"../src/index":"h7u1C"}],"h7u1C":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

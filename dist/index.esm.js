@@ -1,14 +1,9 @@
-import _toConsumableArray from "@babel/runtime/helpers/esm/toConsumableArray";
 import { isArray, isObject } from 'tn-validate';
-var sortobj = function sortobj(value) {
-  if (isArray(value)) return _toConsumableArray(value.map(function (i) {
-    return sortobj(i);
-  }));else if (!isObject(value)) return value;
-  var sorted = {};
-  var keys = Object.keys(value).sort();
-  keys.forEach(function (key) {
-    return sorted[key] = sortobj(value[key]);
-  });
+const sortobj = function (value) {
+  if (isArray(value)) return [...value.map(i => sortobj(i))];else if (!isObject(value)) return value;
+  const sorted = {};
+  const keys = Object.keys(value).sort();
+  keys.forEach(key => sorted[key] = sortobj(value[key]));
   return sorted;
 };
 export { sortobj };

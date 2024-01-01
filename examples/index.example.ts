@@ -14,3 +14,4 @@ const obj = {
 
 console.log(JSON.stringify(obj, null, 2))
 console.log(JSON.stringify(sortobj(obj), null, 2))
+console.log(JSON.stringify(obj, null, 2))
