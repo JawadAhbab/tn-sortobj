@@ -11,7 +11,7 @@
     "url": "https://github.com/JawadAhbab/tn-sortobj.git"
   },
   "scripts": {
-    "serve": "parcel .dev/parcel/index.html --out-dir .dev/parcel/dist --cache-dir .dev/parcel/cache --open",
+    "serve": "parcel .dev/parcel/index.html --dist-dir .dev/parcel/dist --cache-dir .dev/parcel/cache --open",
     "build": "rimraf dist && rollup -c",
     "publish": "rimraf .dev/parcel/dist & rimraf .dev/parcel/cache && npm run Build && yarn publish"
   },
