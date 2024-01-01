@@ -1,13 +1,16 @@
 import { sortobj } from '../src/index'
 
-let x = [
-  {
-    ano: 1,
-    elm: [1, 2, 3],
-    page: {
-      no: 3,
-    },
-  },
-]
+const obj = {
+  breed: 'persian',
+  name: 'Jawad',
+  age: 22,
+  sex: true,
+  about: { phoneA: '006', phoneC: '00Z', phoneB: '005' },
+  abouts: [
+    { phoneC: '00X', phoneB: '001' },
+    { phoneA: '004', phoneC: '00Y', phoneB: '003' },
+  ],
+}
 
-console.log(sortobj(x))
+console.log(JSON.stringify(obj, null, 2))
+console.log(JSON.stringify(sortobj(obj), null, 2))
