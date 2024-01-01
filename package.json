@@ -1,6 +1,6 @@
 {
   "name": "tn-sortobj",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": " ",
   "keywords": [],
   "main": "dist/index.cjs.js",
@@ -12,8 +12,8 @@
   },
   "scripts": {
     "serve": "parcel .dev/parcel/index.html --dist-dir .dev/parcel/dist --cache-dir .dev/parcel/cache --open",
-    "build": "rimraf dist && rollup -c",
-    "publish": "yarn build && yarn publish"
+    "Build": "rimraf dist && rollup -c",
+    "Publish": "rimraf .dev/parcel/dist & rimraf .dev/parcel/cache && yarn Build && yarn publish"
   },
   "author": "Turnova",
   "license": "MIT",
